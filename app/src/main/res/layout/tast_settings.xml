@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutmain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffdfeaf1"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <ImageView
+        android:id="@+id/articles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="10.0"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:soundEffectsEnabled="true"
+        android:src="@drawable/eating"
+        android:tag="A" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/recbtn"
+            style="@style/customButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1.0"
+            android:onClick="onClickRecBtn"
+            android:padding="10dp"
+            android:text="@string/record" />
+
+        <Button
+            android:id="@+id/capbtn"
+            style="@style/customButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1.0"
+            android:onClick="onClickCapBtn"
+            android:padding="10dp"
+            android:text="@string/capture" />
+    </LinearLayout>
+</LinearLayout>

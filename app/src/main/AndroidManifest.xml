@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.natarajan.easycommunication">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CAPTURE_AUDIO_OUTPUT" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <uses-feature
+        android:name="android.permission.CAMERA"
+        android:required="false" />
+    <uses-feature
+        android:name="android.permission.CAPTURE_AUDIO_OUTPUT"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.permission.RECORD_AUDIO"
+        android:required="false" />
+    <uses-feature
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:required="false" />
+    <uses-feature
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.natarajan.easycommunication.MainActivity"
+            android:label="Easy Communication"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name=".MainActivity" />
+                <action android:name="android.intent.action.APPACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.natarajan.easycommunication.HelpActivity"
+            android:label="Easy Communication"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name=".HelpActivity" />
+                <action android:name="android.intent.action.HELPACT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.natarajan.easycommunication.LaunchActivity"
+            android:label="Easy Communication"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name=".MainActivity" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.natarajan.easycommunication.SettingsTask"
+            android:label="EC Settings"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name=".SettingsTask" />
+                <action android:name="android.intent.action.SETTINGSTASK" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.natarajan.easycommunication.SMSSetting"
+            android:label="EC Settings"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name=".SettingsTask" />
+                <action android:name="android.intent.action.SMSSETTING" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.natarajan.easycommunication.SettingsHome"
+            android:icon="@mipmap/set_launcher"
+            android:label="EC Settings"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.natarajan.easycommunication.SettingsTask">
+            <intent-filter>
+                <action android:name=".SettingsTask" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.natarajan.easycommunication.AudioRecord"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.AUDIORECORDKIDS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

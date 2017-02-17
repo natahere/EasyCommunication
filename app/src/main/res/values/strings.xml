@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="PREFS_NAME">babyfile</string>
+    <string name="action_settings">Help</string>
+    <string name="app_name">Easy Communication</string>
+    <string name="capture">Capture</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="next">Next</string>
+    <string name="opengallery">Open Gallery</string>
+    <string name="pickgallery">Pick Gallery</string>
+    <string name="previous">Prev</string>
+    <string name="record">Record</string>
+    <string name="takepic">Take Picture</string>
+    <string name="timer">Timer</string>
+    <string name="welcome">   This application is dedicated to my special children at www.vasantham.org.  We have created this application to make children with autism, dyslexia, mental retardation and other special needs to communicate easily. On installation of the application, two launcher icons would be installed. A) Easy Communication - This is to be used by children. 1. Activities listed - Hungry(eating), Thirsty(Drinking), Sleep, Washroom, Yes and No 2. by default, a picture describing the activity will be displayed. 3. On click of the picture, a voice over would explain the need. B) EC Settings - This is to be used by Parents or Adult who would like to Personalize  the app for the kid. 1. Picture for the activity can be personalized - Take a new picture or Use existing one from Gallery 2. Audio sound can be personalized - Kids voice can be recorded or Parents voice - NO LANGUAGE BARRIER - any language can be recorded and can be played back. 3. All SIX activities can be personalized. 4. In case if you would like to change Picture or Audio - Can click or record as many times as required.   </string>
+</resources>

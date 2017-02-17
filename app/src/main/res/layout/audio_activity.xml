@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffdfeaf1">
+
+    <Button
+        android:id="@+id/StartRecBtn"
+        style="@style/customButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:onClick="startRecording"
+        android:text="Start Recording" />
+
+    <Button
+        android:id="@+id/StopRecBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:onClick="stopRecording"
+        android:text="Stop Recording"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/StartRecBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/timer" />
+
+    <Button
+        android:id="@+id/pbbtn"
+        style="@style/customButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:onClick="onClickPB"
+        android:text="Play Back" />
+
+    <Button
+        android:id="@+id/stopbtn"
+        style="@style/customButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:onClick="onClickStop"
+        android:text="stop"
+        android:visibility="invisible" />
+</RelativeLayout>
